@@ -1,0 +1,163 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2550637c-0f22-4f93-beb1-af673808c293" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Osoba</ID>
+  <Name>Dim Osoba</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3f0d494e-850c-40a1-9b04-ea58ec3f3e1f">
+    <DataSourceViewID>Prace Dyplomowe Dw</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="48ea24e3-ce47-45e6-b2b0-0324399fdd7e">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="6b96ae10-f0bc-4190-a637-59412b972491">
+      <ID>ID Osoba</ID>
+      <Name>ID Osoba</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9464eaef-4c10-4a75-bc03-668ff46da063">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e5604d2-dfa6-4ff2-b089-50fdc6d5a2ef">
+            <TableID>dbo_DimOsoba</TableID>
+            <ColumnID>ID_Osoba</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="be50d250-d81e-4778-a232-ffc109786310">
+          <AttributeID>Imie</AttributeID>
+          <Name>Imie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="abd71fcd-a3f6-4f2f-9540-9a4916dfbead">
+          <AttributeID>Nazwisko</AttributeID>
+          <Name>Nazwisko</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="09c73375-9620-4739-aaee-2ff696c998aa">
+          <AttributeID>ID Stopien</AttributeID>
+          <Name>ID Stopien</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d0cd7d92-3e7d-475b-bfe5-3930e4d2f890">
+      <ID>Imie</ID>
+      <Name>Imie</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ddb75bd2-b2c7-459e-a9e3-7b97ab03fb9b">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6596b53e-77ce-4ff3-9671-9195f2908db0">
+            <TableID>dbo_DimOsoba</TableID>
+            <ColumnID>Imie</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d3547e98-ba07-4fb7-8112-398a39762192">
+      <ID>Nazwisko</ID>
+      <Name>Nazwisko</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9c2bfd09-cf09-4d15-b1a9-3364faa35548">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="baa9deb7-1ba0-40d1-8680-83ec3b30fe13">
+            <TableID>dbo_DimOsoba</TableID>
+            <ColumnID>Nazwisko</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7a6307c2-3288-4bb9-8e75-5ec20df23592">
+      <ID>ID Stopien</ID>
+      <Name>ID Stopien</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dfdd5e50-0c2f-4165-8909-565ab9788a71">
+          <DataType>SmallInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63ac16dc-6ece-4c68-9b66-dff957f67cc2">
+            <TableID>dbo_DimStopienNaukowy</TableID>
+            <ColumnID>ID_Stopien</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="66876520-a31d-480d-883f-07fc7c578fd7">
+          <AttributeID>Stopien</AttributeID>
+          <Name>Stopien</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d8e2db7-58ee-4a20-9f53-41fce061ce62">
+      <ID>Stopien</ID>
+      <Name>Stopien</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d84d2037-b89f-451b-8182-cda766d5269b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f69f019-d327-445f-ab52-a2e1b01a91ca">
+            <TableID>dbo_DimStopienNaukowy</TableID>
+            <ColumnID>Stopien</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "PraceDyplomoweOLAP", "PraceDyplomoweOLAP\PraceDyplomoweOLAP.dwproj", "{DB659B28-6725-4636-9497-775350806B42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB659B28-6725-4636-9497-775350806B42}.Development|Default.ActiveCfg = Development
+		{DB659B28-6725-4636-9497-775350806B42}.Development|Default.Build.0 = Development
+		{DB659B28-6725-4636-9497-775350806B42}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAD02F4E-CC59-4DD0-886A-E7A64283D57E}
+	EndGlobalSection
+EndGlobal
